@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/backgroundimg"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    tools:context=".playSound">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Songname"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name of song"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/songImage"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="00:00"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/songDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/white" />
+</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/tenbacward"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/replay"/>
+
+        <ImageButton
+            android:id="@+id/Start"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/baseline_play_arrow_24"/>
+        <ImageButton
+            android:id="@+id/reset"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/restart"/>
+        <ImageButton
+            android:id="@+id/tenForward"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/forward"/>
+
+        <ImageButton
+            android:id="@+id/NextImageButton"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/next"/>
+
+    </LinearLayout>
+
+</LinearLayout>
